@@ -16,8 +16,8 @@ export const Navbar: React.FC= () => {
           className={styles.menuBtn}
           src={
             menuOpen
-              ? menuicon
-              : closeicon
+              ? closeicon
+              : menuicon
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
