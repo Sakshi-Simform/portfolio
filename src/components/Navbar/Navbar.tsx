@@ -8,7 +8,7 @@ export const Navbar: React.FC= () => {
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
+      <a className={styles.title} href="#">
         Portfolio
       </a>
       <div className={styles.menu}>
