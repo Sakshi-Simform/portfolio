@@ -1,8 +1,6 @@
-# Create a portfolio website which should include the following details:
+# Portfolio website which should include the following details:
 
-- Unique/small introduction about you
-- Projects you've made till now
-- Your skills and expertise
-- Your education
-- Your hobbies
-- Your social media handles including GitHub, LinkedIn etc
+- small introduction about myself
+- showcase the projects
+- skills 
+- My social media handles including GitHub, LinkedIn  and Email
