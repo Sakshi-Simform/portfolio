@@ -1,5 +1,9 @@
 import React from "react";
 import styles from '../../styles/About.module.css'
+import aboutimage from '../../../assets/about/aboutImage.png'
+import cursoricon from '../../../assets/about/cursorIcon.png'
+import uiicon from '../../../assets/about/uiIcon.png'
+
 
 export  const About: React.FC = () => {
   return (
@@ -7,13 +11,13 @@ export  const About: React.FC = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src="assets/about/aboutImage.png"
+          src={aboutimage}
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src="assets/about/cursorIcon.png" alt="Cursor icon" />
+            <img src={cursoricon} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
               <p>
@@ -23,7 +27,7 @@ export  const About: React.FC = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src="assets/about/uiIcon.png" alt="UI icon" />
+            <img src={uiicon} alt="UI icon" />
             <div className={styles.aboutItemText}>
               <h3>UI Designer</h3>
               <p>
@@ -33,8 +37,6 @@ export  const About: React.FC = () => {
           </li>
         </ul>
         </div>
-        
-
     </section>
   );
 };
