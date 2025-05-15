@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.App {
+.app {
   background-color: var(--color-bg);
   width: 100%;
   height: 100%;
