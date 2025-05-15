@@ -1,9 +1,15 @@
+import { About } from './components/About/About';
+import { Hero } from './components/Hero/Hero';
+import { Navbar } from './components/Navbar/Navbar';
+import styles from './styles/App.module.css'
+
 
 export function App() {
   return (
-    <>
-      <h1>Portfolio</h1>
-    </>
-  )
+    <div className={styles.App}>
+      <Navbar />
+      <Hero />
+     <About />
+    </div>
+  );
 }
-
