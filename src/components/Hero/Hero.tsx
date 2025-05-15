@@ -9,8 +9,8 @@ export const Hero:React.FC = () => {
         <h1 className={styles.title}>Hi, I'm Sakshi</h1>
         <p className={styles.description}>
           I'm a Frontend developer.
-          Aspiring software engineer at Simform <br>
-          </br>
+          Aspiring software engineer at Simform 
+          <br />
           with hands-on training in coding, web development.
         </p>
         <a href="mailto:sakshi.shah@simformsolutions.com" className={styles.contactBtn}>
