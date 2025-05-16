@@ -1,5 +1,5 @@
 import React from "react";
-import heroimage from '../../../assets/hero/heroImage.png'
+import heroImage from '../../../assets/hero/heroImage.png'
 import styles from "../../styles/Hero.module.css";
 
 export const Hero:React.FC = () => {
@@ -18,7 +18,7 @@ export const Hero:React.FC = () => {
         </a>
       </div>
       <img
-        src={heroimage}
+        src={heroImage}
         alt="About image"
         className={styles.heroImg}
       />
