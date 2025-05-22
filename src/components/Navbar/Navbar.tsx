@@ -4,7 +4,7 @@ import closeIcon from '../../../assets/nav/closeIcon.png';
 import styles from "../../styles/Navbar.module.css";
 
 export const Navbar: React.FC= () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className={styles.navbar}>
@@ -15,16 +15,16 @@ export const Navbar: React.FC= () => {
         <img
           className={styles.menuBtn}
           src={
-            menuOpen
+            isMenuOpen
               ? closeIcon
               : menuIcon
           }
           alt="menu-button"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         />
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
+          className={`${styles.menuItems} ${isMenuOpen && styles.menuOpen}`}
+          onClick={() => setIsMenuOpen(false)}
         >
           <li>
             <a href="#about">About</a>
