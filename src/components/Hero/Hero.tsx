@@ -13,9 +13,6 @@ export const Hero:React.FC = () => {
           <br />
           with hands-on training in coding, web development.
         </p>
-        <a href="mailto:sakshi.shah@simformsolutions.com" className={styles.contactBtn}>
-          Contact Me
-        </a>
       </div>
       <img
         src={heroImage}
