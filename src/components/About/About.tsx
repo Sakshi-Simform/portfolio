@@ -34,8 +34,8 @@ export const About: React.FC = () => {
               <div className={styles.aboutItemText}>
                 <h3>Education</h3>
                 <div className={styles.educationDetail}>
-                  {education.map((education, index) => (
-                    <p key={index}>
+                  {education.map((education) => (
+                    <p key={education.id}>
                       <strong className={styles.year}>{education.year}</strong>
                       <br />
                       <span>{education.title}</span>
