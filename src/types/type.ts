@@ -1,4 +1,5 @@
 export interface Project {
+    id:string;
     image: string;
     title: string;
     description: string;
@@ -17,6 +18,7 @@ export interface Experience {
 }
 
 export interface Education {
+    id:string;
     title: string;
     institution: string;
     year: string;
@@ -25,6 +27,7 @@ export interface Education {
 export type Language = 'HTML' | 'CSS' | 'REACT' | 'FLUTTER' | 'MLP' | 'RSTUDIO' | 'JAVASCRIPT' | 'TYPESCRIPT';
 
 export const languages: Array<Language> = [
+    
     'HTML',
     'CSS',
     'REACT',
