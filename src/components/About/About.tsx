@@ -1,8 +1,11 @@
 import React from "react";
+import { education } from "../../Mockdata/Education";
+import { languages } from "../../types/type";
 import styles from '../../styles/About.module.css'
 import aboutImage from '../../../assets/about/aboutImage.png'
 import cursorIcon from '../../../assets/about/cursorIcon.png'
 import uiIcon from '../../../assets/about/uiIcon.png'
+import serverIcon from '../../../assets/about/serverIcon.png'
 
 export  const About: React.FC = () => {
   return (
@@ -26,11 +29,32 @@ export  const About: React.FC = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
+            <img src={serverIcon} alt="Server icon" />
+            <div className={styles.aboutItemText}>
+              <h3>Education</h3>
+              <div className={styles.educationDetail}>
+                {education.map((education, index) => (
+                  <p key={index}>
+                    <strong className={styles.year}>{education.year}</strong>
+                    <br />
+                    <span>{education.title}</span>
+                    <br />
+                    <span>{education.institution}</span>
+                  </p>
+                ))}
+              </div>
+            </div>
+          </li>
+          <li className={styles.aboutItem}>
             <img src={uiIcon} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
-              <p>
-                I have designed multiple landing pages and have created design.
+              <h3>Languages</h3>
+              <p className={styles.iconDisplay}>
+                {languages.map((language, index) => (
+                  <button key={index} className={styles.language}>
+                    {language}
+                  </button>
+                ))}
               </p>
             </div>
           </li>
