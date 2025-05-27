@@ -24,16 +24,4 @@ export interface Education {
     year: string;
 }
 
-export type Language = 'HTML' | 'CSS' | 'REACT' | 'FLUTTER' | 'MLP' | 'RSTUDIO' | 'JAVASCRIPT' | 'TYPESCRIPT';
-
-export const languages: Array<Language> = [
-    
-    'HTML',
-    'CSS',
-    'REACT',
-    'FLUTTER',
-    'MLP',
-    'RSTUDIO',
-    'JAVASCRIPT',
-    'TYPESCRIPT'
-];
+export type Language = ['HTML', 'CSS', 'REACT', 'FLUTTER', 'MLP', 'RSTUDIO', 'JAVASCRIPT', 'TYPESCRIPT'];
