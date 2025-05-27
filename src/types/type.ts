@@ -8,6 +8,7 @@ export interface Project {
 }
 
 export interface Experience {
+    id:string;
     role: string;
     organisation: string;
     startDate: string;

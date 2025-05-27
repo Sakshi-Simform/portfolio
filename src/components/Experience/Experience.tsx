@@ -7,8 +7,8 @@ export const Experience = () => {
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
         <ul className={styles.history}>
-          {experience.map((item, index) => (
-            <li className={styles.historyItem} key={index}>
+          {experience.map((item => (
+           <li key={item.id} className={styles.historyItem}>
               <img
                 src="https://th.bing.com/th/id/OIP.nV2K7VZ6_JuXrNAXiQqV8QAAAA?cb=iwc2&rs=1&pid=ImgDetMain"
                 alt={item.organisation}
@@ -23,7 +23,7 @@ export const Experience = () => {
                 </ul>
               </div>
             </li>
-          ))}
+          )))}
         </ul>
       </div>
     </section>
