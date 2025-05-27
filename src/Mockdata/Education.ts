@@ -12,4 +12,4 @@ export const education: Array<Education> = [
   "institution": "GLS University",
   "year":"2023-2025"
  },
-]
+]as const;

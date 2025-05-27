@@ -12,4 +12,4 @@ export const experience: Array<Experience> = [
       "Ensured clean, maintainable code through best practices. "
     ]
   }
-]
+]as const;

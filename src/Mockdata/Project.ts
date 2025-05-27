@@ -25,4 +25,4 @@ export const project: Array<Project> = [
     "demo": "https://deploy-preview-4--cookpedia-app.netlify.app/",
     "source": "https://github.com/Sakshi-Simform/Recipe-App/pull/3"
   }
-]
+]as const;
