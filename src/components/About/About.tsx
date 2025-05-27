@@ -51,8 +51,8 @@ export const About: React.FC = () => {
               <div className={styles.aboutItemText}>
                 <h3>Languages</h3>
                 <p className={styles.iconDisplay}>
-                  {languages.map((language, index) => (
-                    <button key={index} className={styles.language}>
+                  {languages.map((language) => (
+                    <button key={language} className={styles.language}>
                       {language}
                     </button>
                   ))}
