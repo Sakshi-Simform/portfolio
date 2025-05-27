@@ -52,9 +52,9 @@ export const About: React.FC = () => {
                 <h3>Languages</h3>
                 <p className={styles.iconDisplay}>
                   {languages.map((language) => (
-                    <button key={language} className={styles.language}>
+                    <span key={language} className={styles.language}>
                       {language}
-                    </button>
+                    </span>
                   ))}
                 </p>
               </div>
