@@ -23,7 +23,7 @@ export interface Education {
 
 export type Language = 'HTML' | 'CSS' | 'REACT' | 'FLUTTER' | 'MLP' | 'RSTUDIO' | 'JAVASCRIPT' | 'TYPESCRIPT';
 
-export const languages: Language[] = [
+export const languages: Array<Language> = [
     'HTML',
     'CSS',
     'REACT',
