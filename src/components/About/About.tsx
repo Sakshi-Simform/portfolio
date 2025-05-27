@@ -1,6 +1,6 @@
 import React from "react";
 import { education } from "../../Mockdata/Education";
-import { languages } from "../../types/type";
+import {languages} from "../../Mockdata/Language"
 import styles from '../../styles/About.module.css'
 import aboutImage from '../../../assets/about/aboutImage.png'
 import cursorIcon from '../../../assets/about/cursorIcon.png'
