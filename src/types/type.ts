@@ -23,5 +23,3 @@ export interface Education {
     institution: string;
     year: string;
 }
-
-export type Language = ['HTML', 'CSS', 'REACT', 'FLUTTER', 'MLP', 'RSTUDIO', 'JAVASCRIPT', 'TYPESCRIPT'];
