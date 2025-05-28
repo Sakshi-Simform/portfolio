@@ -1,6 +1,4 @@
-import type{ Language } from "../types/type";
-
-export const languages: Language = [
+export const languages = [
     'HTML',
     'CSS',
     'REACT',
@@ -8,5 +6,5 @@ export const languages: Language = [
     'MLP',
     'RSTUDIO',
     'JAVASCRIPT',
-    'TYPESCRIPT'    
-]as const;
+    'TYPESCRIPT'
+] as const;
