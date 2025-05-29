@@ -2,7 +2,7 @@ import type { Experience } from "../types/type"
 
 export const experience: Array<Experience> = [
   {
-    id:crypto.randomUUID(),
+    id:1,
     role: "Software Engineer",
     organisation: "Simform Solutions",
     startDate: "January 2025",
