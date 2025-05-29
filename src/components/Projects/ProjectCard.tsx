@@ -1,11 +1,11 @@
 import type { Project } from "../../types/type";
 import styles from "../../styles/ProjectCard.module.css";
 
-interface ProjectCardProps {
+interface ProjectCardProp {
   project: Project;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({
+export const ProjectCard: React.FC<ProjectCardProp> = ({
   project: { title, image, description, skills, demo, source },
 }) => {
   return (
