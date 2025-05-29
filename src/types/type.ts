@@ -1,5 +1,5 @@
 export interface Project {
-    id:string;
+    id:number | string;
     image: string;
     title: string;
     description: string;
@@ -9,7 +9,7 @@ export interface Project {
 }
 
 export interface Experience {
-    id:string;
+    id:number | string;
     role: string;
     organisation: string;
     startDate: string;
@@ -18,7 +18,7 @@ export interface Experience {
 }
 
 export interface Education {
-    id:string;
+    id:number | string;
     title: string;
     institution: string;
     year: string;
