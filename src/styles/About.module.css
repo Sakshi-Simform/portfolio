@@ -66,55 +66,51 @@
   font-size: 25px;
 }
 
-.hobbies {
-  color: var(--color-text);
-  margin-top: 4rem;
-}
-
-.hobbiesTitle {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-
-.hobbiesGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.hobbyButton {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  background-color: transparent;
-  color: var(--color-text);
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.4s, transform 0.3s;
-}
-
-.hobbyButton:hover {
-  background-size: 100% 100%;
-  transform: translateY(-2px);
-}
 
 .aboutContent {
   display: flex;
   flex-direction: column;
-  gap: 3.125rem; /* Match spacing between items */
+  gap: 3.125rem; 
 }
 
+.iconDisplay {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.language {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  color: #222;
+  border: none;
+  transition: all 0.3s ease;
+  min-width: 80px;
+  text-align: center;
+}
+
+.language:hover {
+  background-color: #007acc;
+  color: #fff;
+  border-color: #007acc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.year{
+  margin-bottom: 0.5rem;
+}
+
+.educationDetail{
+  display: flex;
+      align-items: center;
+      gap: 5rem;
+      margin-top: 1rem;
+}
 
 @media screen and (max-width: 830px) {
   .container {
@@ -140,13 +136,4 @@
     padding-right: 0;
   }
 
-  .hobbiesGrid {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .hobbyButton {
-    width: 100%;
-    text-align: center;
-  }
 }

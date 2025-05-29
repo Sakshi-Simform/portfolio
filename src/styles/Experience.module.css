@@ -1,0 +1,113 @@
+@import './Variable.module.css';
+
+.container {
+  color: var(--color-text);
+  padding-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.history {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  gap: 20px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.historyItem img {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  margin-top: 57px;
+}
+
+.historyItemDetails {
+  font-family: var(--font-roboto);
+  color: #fff;
+  flex: 1;
+}
+
+.historyItemDetails h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff; 
+}
+
+.historyItemDetails p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #f0f0f0; 
+}
+
+.historyItemDetails ul {
+  margin-top: 10px;
+  list-style-position: inside;
+  font-size: 18px;
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #dcdcdc; 
+}
+
+.historyItemDetails ul li {
+  margin-bottom: 8px;
+}
+
+.historyItemDetails a {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #19376d;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.historyItemDetails a:hover {
+  background-color: #1a4e85; 
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+}

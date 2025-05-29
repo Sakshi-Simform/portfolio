@@ -1,0 +1,157 @@
+@import './Variable.module.css';
+
+.container {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  max-width: 1150px;
+  min-height: 212px;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+}
+
+.image {
+  width: 300px;
+  height: 230px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-left: 3rem;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 3rem;
+}
+
+.skills {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding-left: 3rem;
+  align-items: center;
+}
+
+.skill:hover {
+  background-color: #9e98988f;
+}
+
+.skill {
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: var(--color-dark);
+  padding: 2px 22px;
+}
+
+.links {
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+.link:hover {
+  background-color: transparent;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 26px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 1px 19px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .title,
+  .description,
+  .skills,
+  .links {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .skills,
+  .links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .skill {
+    font-size: 18px;
+    padding: 2px 16px;
+  }
+
+  .link {
+    font-size: 22px;
+    padding: 1px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 14px;
+  }
+
+  .image {
+    max-height: 180px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .skill {
+    font-size: 16px;
+    padding: 2px 12px;
+  }
+
+  .link {
+    font-size: 18px;
+    padding: 1px 12px;
+  }
+}
