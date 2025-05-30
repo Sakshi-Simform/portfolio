@@ -17,31 +17,31 @@ export const Contact: React.FC = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     if (!form.current) return;
-
+  
     const name = form.current.from_name.value.trim();
     const email = form.current.from_email.value.trim();
     const message = form.current.message.value.trim();
-
+  
     const nameValidation = validateName(name);
     const emailValidation = validateEmail(email);
     const messageValidation = validateMessage(message);
-
+  
     setNameError(nameValidation);
     setEmailError(emailValidation);
     setMessageError(messageValidation);
-
-    const validation = nameValidation || emailValidation || messageValidation
-
+  
+    const validation = nameValidation || emailValidation || messageValidation;
+  
     if (validation) return;
-
+  
     emailjs
       .sendForm(
-        "service_awk5k0q",
-        "template_nd1md2q",
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "zBWVbg4-chk-L_9Tm"
+        import.meta.env.VITE_APP_EMAILJS_USER_ID
       )
       .then(() => {
         toast.success("Message sent successfully!");
