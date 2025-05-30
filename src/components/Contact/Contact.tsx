@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
-import { validateEmail ,validateMessage , validateName } from "../../utils/validation";
+import { validateEmail, validateMessage, validateName } from "../../utils/validation";
 import styles from "../../styles/Contact.module.css";
 import "react-toastify/dist/ReactToastify.css";
 import emailIcon from "../../../assets/contact/emailIcon.png";
@@ -14,21 +14,6 @@ export const Contact: React.FC = () => {
   const [nameError, setNameError] = useState<string | null>(null);
   const [emailError, setEmailError] = useState<string | null>(null);
   const [messageError, setMessageError] = useState<string | null>(null);
-
-  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const error = validateName(e.target.value);
-    setNameError(error);
-  };
-
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const error = validateEmail(e.target.value);
-    setEmailError(error);
-  };
-
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const error = validateMessage(e.target.value);
-    setMessageError(error);
-  };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -79,34 +64,34 @@ export const Contact: React.FC = () => {
       </div>
 
       <form className={styles.form} ref={form} onSubmit={sendEmail} noValidate>
-  <label>Name</label>
-  <input
-    type="text"
-    name="from_name"
-    placeholder="Name"
-    onChange={(e) => setNameError(validateName(e.target.value))}
-  />
-  {nameError && <p className={styles.error}>{nameError}</p>}
+        <label>Name</label>
+        <input
+          type="text"
+          name="from_name"
+          placeholder="Name"
+          onChange={(e) => setNameError(validateName(e.target.value))}
+        />
+        {nameError && <p className={styles.error}>{nameError}</p>}
 
-  <label>Email</label>
-  <input
-    type="email"
-    name="from_email"
-    placeholder="Email"
-    onChange={(e) => setEmailError(validateEmail(e.target.value))}
-  />
-  {emailError && <p className={styles.error}>{emailError}</p>}
+        <label>Email</label>
+        <input
+          type="email"
+          name="from_email"
+          placeholder="Email"
+          onChange={(e) => setEmailError(validateEmail(e.target.value))}
+        />
+        {emailError && <p className={styles.error}>{emailError}</p>}
 
-  <label>Message</label>
-  <textarea
-    name="message"
-    placeholder="Message"
-    onChange={(e) => setMessageError(validateMessage(e.target.value))}
-  />
-  {messageError && <p className={styles.error}>{messageError}</p>}
+        <label>Message</label>
+        <textarea
+          name="message"
+          placeholder="Message"
+          onChange={(e) => setMessageError(validateMessage(e.target.value))}
+        />
+        {messageError && <p className={styles.error}>{messageError}</p>}
 
-  <input className={styles.submit} type="submit" value="Send" />
-</form>
+        <input className={styles.submit} type="submit" value="Send" />
+      </form>
 
       <ul className={styles.links}>
         <li className={styles.link}>
