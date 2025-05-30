@@ -32,7 +32,9 @@ export const Contact: React.FC = () => {
     setEmailError(emailValidation);
     setMessageError(messageValidation);
 
-    if (nameValidation || emailValidation || messageValidation) return;
+    const validation = nameValidation || emailValidation || messageValidation
+
+    if (validation) return;
 
     emailjs
       .sendForm(
